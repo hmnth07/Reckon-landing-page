@@ -103,14 +103,14 @@ body {
     border-radius: 20px;
 }
 .box1 p {
-    font-size: 22px;
-    padding: 15px 130px 0px 25px;
+    font-size: 25px;
+    padding: 15px 145px 0px 25px;
     font-style: normal;
     font-weight: 400;
 }
 #graph-svg {
     width: 90%;
-    margin: -35px 21px 14px 25px;
+    margin: -45px 21px 14px 25px;
 }
 
 .box2 {
@@ -162,7 +162,8 @@ body {
 .box2-flex-container {
     display: flex;
     align-items: center;
-    width: 30%;
+    width: 50%;
+    justify-content: center;
     margin: 5px auto;
     padding-top: 7px;
 }
@@ -225,7 +226,7 @@ body {
     /* width: 289px; */
     flex: 40%;
     margin: 5px auto;
-    padding-left: 120px;
+    padding-left: 180px;
     font-size: 16px;
 }
 .people-timer-flex-box {
@@ -252,10 +253,10 @@ body {
     margin: 3px 5px 3px 5px;
 }
 .prize-money-container {
-    width: 341px;
-    height: 155px;
+    width: 364px;
+    height: auto;
     margin-top: 13px;
-    padding: 12px 12px 0px 23px;
+    padding: 12px 12px 18px 23px;
 
     background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
     border-radius: 20px;
@@ -268,6 +269,13 @@ body {
 }
 .prize-1, .prize-2, .prize-3 {
     display: flex;
+}
+.prize-1 {
+    width: 50%;
+}
+.prize-2 {
+    width: 50%;
+    float: right;
 }
 .prizes-flexbox p {
     margin-left: 7px;
@@ -297,6 +305,29 @@ body {
 .laptop-content {
     display: block;
 }
+/* ___________responsive to 1440px */
+@media screen and (max-width: 1440px) {
+    .box1 p {
+        font-size: 22px;
+        padding: 15px 145px 0px 25px;
+    }
+    #graph-svg {
+        width: 90%;
+        margin: -30px 21px 14px 25px;
+    }
+    
+    .box2-flex-container p {
+        font-size: 24px;
+    }
+    .right-container {
+        padding-left: 100px;
+    }
+
+    .prize-money-container {
+        width: 361px;
+    }
+}
+
 /* ___________________________________________________________________________________________________Responsive to Screen-1024px____*/
 
 @media screen and (max-width: 1024px) {
@@ -326,6 +357,9 @@ body {
     .box2 {
         height: 76px;
         margin: 14px auto;
+    }
+    .box2 p {
+        font-size: 14px;
     }
     .box2-flex-container p {
         font-size: 22px;
@@ -366,7 +400,6 @@ body {
 
     .prize-money-container {
         width: 289px;
-        height: 139px;
     }
 
     .designCurve {
@@ -409,10 +442,6 @@ body {
         width: 27%;
         margin: 5px auto;
         padding-top: 7px;
-    }
-    .box2 p {
-        font-size: 14px;
-        text-align: center;
     }
     
     .box2-flex-container p {
@@ -495,23 +524,6 @@ body {
     }
     .prize-money-container {
         width: 100%;
-        /* height: 119px; */
-        margin-top: 13px;
-        padding: 12px 12px 0px 23px;
-
-    }
-    .prizes-flexbox{
-        margin: 5px 0px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-    .prize-1 {
-        width: 50%;
-    }
-    .prize-2 {
-        width: 50%;
-        float: right;
     }
     .prizes-flexbox p {
         margin-left: 7px;
@@ -581,8 +593,6 @@ body {
     }
 
 }
-
-
 
 /* _____________________________________________________________________________________________Responsive to Mobiles________ */
 @media screen and (max-width: 500px) {
@@ -671,5 +681,13 @@ body {
     .designCurve {
         height: 365px;
         background-image: url(../images/mobile-footer-bg.svg);
+    }
+}
+
+/* _______________________________Responsive to small mobiles__________ */
+
+@media screen and (max-width: 320px) {
+    .box2 p {
+        font-size: 12px;
     }
 }
