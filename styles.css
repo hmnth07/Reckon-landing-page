@@ -390,7 +390,7 @@ body {
         height: 33px;
     }
     .people-timer-flex-box img {
-        margin: 3px 5px 3px 5px;
+        margin: 3px 5px 0px 5px;
     }
     .timer {
         width: 117px;
@@ -502,7 +502,7 @@ body {
         position: absolute;
         top: 35px;
         right: -20px;
-        left: -25px;
+        left: -20px;
         display: flex;
         justify-content: space-between;
     }
