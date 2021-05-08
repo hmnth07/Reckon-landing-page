@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #303560;
+    color: #FAFAFA;
+}
+
+/* ____________Nav-bar_______________*/
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0px 40px 31px;
+}
+
+.nav-container ul {
+    display: flex;
+}
+
+.nav-container .logo {    
+    font-family: 'Rajdhani', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    color: #26FCFF;   
+}
+
+.nav-container li {
+    list-style: none;
+    margin-right: 60px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.coins-bg  {
+    width: 129px;
+    height: 33px;
+
+    display: flex;
+    padding: 2px;
+    justify-content: center;
+    margin-top: 5px;
+
+    background: #383E6E;
+    color: #FAFAFA;
+    font-size: 20px;
+    border-style: none;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.coins-bg img {
+    margin: 5px 5px 5px 5px;
+}
+
+.scoreboard {
+    margin-block-start: 7px;
+}
+
+.btn {
+    height: 42px;
+    width: 145px;
+    font-size: 18px;
+    border-radius: 21px;
+    border-style: none;
+    color: #FAFAFA;
+    background: #6A59FF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);   
+}
+
+/* __________________________________________Hero section________________________________________*/
+
+.hero {
+    display: flex;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.left-container {
+    /* width: 565px; */
+    flex: 60%;
+}
+.box1 {
+    width: 100%;
+    height: 135px;
+
+    background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.box1 p {
+    font-size: 22px;
+    padding: 15px 130px 0px 25px;
+    font-style: normal;
+    font-weight: 400;
+}
+#graph-svg {
+    width: 90%;
+    margin: -35px 21px 14px 25px;
+}
+
+.box2 {
+    width: 100%;
+    height: 90px;
+    margin: 16px auto;
+
+    background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    position: relative;
+}
+.vector-1, .vector-2, .vector-3, .vector-4, .vector-5, .vector-6, .vector-7, .vector-m {
+    position: absolute;
+    z-index: 10;
+}
+.vector-1 {
+    top: 14px;
+    left: 8%;
+}
+.vector-2 {
+    top: 70%;
+    left: 15%;
+}
+.vector-3 {
+    top: 14px;
+    left: 25%;
+}
+.vector-4 {
+    top: 19px;
+    right: 20%;
+}
+.vector-5 {
+    bottom: 14px;
+    right: 15%;
+}
+.vector-6 {
+    top: 13px;
+    right: 10%;
+}
+.vector-7 {
+    top: 31px;
+    right: 5%;
+}
+.vector-m {
+    display: none;
+}
+
+.box2-flex-container {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 5px auto;
+    padding-top: 7px;
+}
+.box2 p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.box2-flex-container p {
+    font-size: 28px;
+    margin-left: 13px;
+}
+
+.box3 {
+    width: 100%;
+    height: 190px;
+    padding: 20px 31px 0px 26px;
+
+    background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.input {
+    width: 100%;
+    background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
+    font-size: 18px;
+    color: #FFFFFF;
+    border-style: none;
+    border-bottom: 1px solid #6A59FF;
+}
+.input:focus{
+    border-style: none;
+    outline: none;
+    border-bottom: 1px solid #6A59FF;
+}
+::placeholder {
+    color: #FFFFFF;
+}
+.box3 p {
+    font-size: 15px;
+    color: #63669B;
+}
+.box3 .submit-btn {
+    width: 160px;
+    margin: 16px auto;
+}
+.box3 ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0%;
+    font-size: 15px;
+    list-style: none;
+}
+.box3 li a{
+    color: #0EF4E7;
+    text-decoration: none;
+}
+/* ______________________hero-section___Right___container__________ */
+.right-container {
+    /* width: 289px; */
+    flex: 40%;
+    margin: 5px auto;
+    padding-left: 120px;
+    font-size: 16px;
+}
+.people-timer-flex-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.people, .timer{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    padding: 7px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.people {
+    background: #35A1D3;
+}
+.timer {
+    width: 120px;
+    background: #6C42D1;
+}
+.people-timer-flex-box img {
+    margin: 3px 5px 3px 5px;
+}
+.prize-money-container {
+    width: 341px;
+    height: 155px;
+    margin-top: 13px;
+    padding: 12px 12px 0px 23px;
+
+    background: linear-gradient(270deg, #383E6E 10.9%, #383E6E 89.45%);
+    border-radius: 20px;
+}
+.prizes-flexbox{
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.prize-1, .prize-2, .prize-3 {
+    display: flex;
+}
+.prizes-flexbox p {
+    margin-left: 7px;
+}
+.prize-3 {
+    margin-top: 10px;
+}
+
+/* ________footer bakground____ */
+body {
+    position: relative;
+}
+.designCurve {
+    position: fixed;
+    bottom: 0px;
+    z-index: -5;
+
+    height: 340px;
+    width: 100%;
+    background-image: url(../images/laptop-footer-bg.svg);
+    background-size: cover;
+}
+
+.mobile-content {
+    display: none;
+}
+.laptop-content {
+    display: block;
+}
+/* ___________________________________________________________________________________________________Responsive to Screen-1024px____*/
+
+@media screen and (max-width: 1024px) {
+
+    /* ____________Nav-bar_______________*/
+    .nav-container li {
+        margin-right: 38px;
+    }
+    
+    .btn {
+        width: 127px;
+        font-size: 14px; 
+    }
+    
+    /* _________________________________Hero section_________*/
+    .box1 {
+        height: 109px;
+
+    }
+    .box1 p {
+        font-size: 16px;
+        padding: 15px 80px 0px 25px;
+    }
+    #graph-svg {
+        margin: -20px 21px 14px 25px;
+    }
+    .box2 {
+        height: 76px;
+        margin: 14px auto;
+    }
+    .box2-flex-container p {
+        font-size: 22px;
+    }
+
+    .box3 {
+        height: 176px;
+        padding: 11px 31px 0px 26px;
+    }
+    .input {
+        font-size: 16px;
+    }
+    .box3 p {
+        font-size: 13px;
+    }
+    .box3 ul {
+        font-size: 13px;
+    }
+    
+    /* _______________________hero-section___Right___container_____ */
+    .right-container {
+        /* width: 289px; */
+        flex: 40%;
+        padding-left: 60px;
+        font-size: 16px;
+    }
+    .people {
+        width: 129px;
+        height: 33px;
+    }
+    .people-timer-flex-box img {
+        margin: 3px 5px 3px 5px;
+    }
+    .timer {
+        width: 117px;
+        height: 34px;
+    }
+
+    .prize-money-container {
+        width: 289px;
+        height: 139px;
+    }
+
+    .designCurve {
+        height: 250px;
+    }
+} 
+/* __________________________________________________________________________________Responsive to tablets_________________ */
+
+@media screen and (max-width: 768px) {
+    .hero {
+        max-width: 80%;
+        margin: 55px auto;
+        flex-direction: column;
+    }
+    
+    .left-container {
+        flex: 100%;
+    }
+    .box1 {
+        width: 100%;
+        height: 109px;
+        padding-right: 5px;
+    }
+    .box1 p {
+        font-size: 18px;
+        padding: 15px 15px 0px 25px;
+    }
+    #graph-svg {
+        width: 90%;
+        margin: -10px 0px 14px 25px;
+    }
+    
+    .box2 {
+        width: 100%;
+        height: 69px;
+    }
+    .box2-flex-container {
+        display: flex;
+        align-items: center;
+        width: 27%;
+        margin: 5px auto;
+        padding-top: 7px;
+    }
+    .box2 p {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .box2-flex-container p {
+        font-size: 16px;
+        margin-left: 11px;
+    }
+    
+    .box3 {
+        width: 100%;
+        height: 190px;
+        padding: 20px 31px 0px 26px;
+    
+    }
+    .input {
+        width: 100%;
+        font-size: 18px;
+        color: #FFFFFF;
+        border-style: none;
+        border-bottom: 1px solid #6A59FF;
+    }
+    .input:focus{
+        border-style: none;
+        outline: none;
+        border-bottom: 1px solid #6A59FF;
+    }
+    ::placeholder {
+        color: #FFFFFF;
+    }
+    .box3 p {
+        font-size: 15px;
+        color: #63669B;
+    }
+    .box3 .submit-btn {
+        width: 160px;
+        margin: 16px auto;
+    }
+    .box3 ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0%;
+        font-size: 15px;
+        list-style: none;
+    }
+    .box3 li a{
+        color: #0EF4E7;
+        text-decoration: none;
+    }
+    /* ________________hero-section__Right__container_________ */
+    .right-container {
+        /* width: 289px; */
+        flex: 100%;
+        margin: 5px 0px;
+        padding-left: 0px;
+        font-size: 13px;
+    }
+    body {
+        position: relative;
+    }
+    .people-timer-flex-box {
+        position: absolute;
+        top: 35px;
+        right: 0px;
+        left: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .people, .timer{
+                
+        width: 129px;
+        height: 24px;
+        display: flex;
+        padding: 2px;
+    }
+    .timer {
+        width: 109px;
+    }
+    .people-timer-flex-box img {
+        margin: 3px 5px 3px 15px;
+    }
+    .prize-money-container {
+        width: 100%;
+        /* height: 119px; */
+        margin-top: 13px;
+        padding: 12px 12px 0px 23px;
+
+    }
+    .prizes-flexbox{
+        margin: 5px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .prize-1 {
+        width: 50%;
+    }
+    .prize-2 {
+        width: 50%;
+        float: right;
+    }
+    .prizes-flexbox p {
+        margin-left: 7px;
+    }
+   
+    .designCurve {
+        height: 580px;
+        background-image: url(../images/mobile-footer-bg.svg);
+    }
+
+
+
+/* ____________________Mobile/tablet content_______ */
+    .mobile-content {
+        display: block;
+    }
+    .laptop-content {
+        display: none;
+    }
+    #head-text {
+        margin: 23px 0px 18px 0px;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    body{
+        position: relative;
+    }
+    .coins-bg  {
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        right: 0px;
+        width: 85px;
+        height: 28px;
+
+        padding: 3px;
+        justify-content:flex-start;
+        margin-top: 0px;
+        font-size: 14px;
+    }
+    .coins-bg img {
+        margin: 3px 5px 3px 7px;
+    }
+
+    body {
+        position: relative;
+    }
+    #menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        height: 56px;
+        background: rgba(91, 96, 134, 0.41);
+        backdrop-filter: blur(4px);
+        position: fixed;
+        bottom: 0px;
+    }
+
+    #menu img {
+        margin: 0px 50px;
+    }
+
+}
+
+
+
+/* _____________________________________________________________________________________________Responsive to Mobiles________ */
+@media screen and (max-width: 500px) {
+    .box1 p {
+        font-size: 16px;
+        padding: 15px 15px 0px 16px;
+    }
+    #graph-svg {
+        width: 90%;
+        margin: -10px 0px 14px 16px;
+    }
+
+    .box2-flex-container {
+        width: 42%;
+    }
+
+    .vector-1 {
+        top: 9px;
+        left: 8%;
+    }
+    .vector-2 {
+        top: 30%;
+        left: 25%;
+    }
+    .vector-3 {
+        top: auto;
+        bottom: 2.8px;
+        left: 7%;
+        width: 4px;
+    }
+    .vector-4 {
+        display: none;
+    }
+    .vector-5 {
+        display: none;
+    }
+    .vector-6 {
+        top: 9px;
+        right: 20%;
+    }
+    .vector-7 {
+        top: 28px;
+        right: 10%;
+    }
+    .vector-m {
+        display: block;
+        bottom: 3px;
+        right: 10%;
+    }
+    
+
+    
+    .box3 {
+        height: 150px;
+        padding: 11px 16px 0px 16px;
+    
+    }
+    .input {
+        font-size: 8px;
+        color: #6A59FF;
+        border-bottom: 1px solid #6A59FF;
+    }
+    .input:focus{
+        border-style: none;
+        outline: none;
+        border-bottom: 1px solid #6A59FF;
+    }
+    ::placeholder {
+        color: #FFFFFF;
+    }
+    .box3 p {
+        font-size: 13px;
+    }
+    .box3 .submit-btn {
+        width: 130px;
+        margin: 10px auto;
+    }
+    .btn {
+        height: 30px;
+    }
+    .box3 ul {
+        display: flex;
+        font-size: 13px;
+    }
+
+    .designCurve {
+        height: 365px;
+        background-image: url(../images/mobile-footer-bg.svg);
+    }
+}
