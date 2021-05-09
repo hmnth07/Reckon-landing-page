@@ -91,7 +91,6 @@ body {
 }
 
 .left-container {
-    /* width: 565px; */
     flex: 60%;
 }
 .box1 {
@@ -223,7 +222,6 @@ body {
 
 /* ______________________hero-section___Right___container__________ */
 .right-container {
-    /* width: 289px; */
     flex: 40%;
     margin: 5px auto;
     padding-left: 180px;
@@ -304,7 +302,7 @@ body {
 .laptop-content {
     display: block;
 }
-/* ___________responsive to 1440px */
+/* _____________________________________________________________________________RESPONSIVE to 1440px_________*/
 @media screen and (max-width: 1440px) {
     .box1 p {
         font-size: 22px;
@@ -327,7 +325,7 @@ body {
     }
 }
 
-/* ___________________________________________________________________________________________________Responsive to Screen-1024px____*/
+/* _____________________________________________________________________________Responsive to Screen-1024px____*/
 
 @media screen and (max-width: 1024px) {
 
@@ -344,7 +342,6 @@ body {
     /* _________________________________Hero section_________*/
     .box1 {
         height: 109px;
-
     }
     .box1 p {
         font-size: 16px;
@@ -380,10 +377,7 @@ body {
     
     /* _______________________hero-section___Right___container_____ */
     .right-container {
-        /* width: 289px; */
-        flex: 40%;
         padding-left: 60px;
-        font-size: 16px;
     }
     .people {
         width: 129px;
@@ -409,8 +403,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .hero {
-        max-width: 80%;
-        margin: 55px auto;
+        margin: 70px auto 10px;
         flex-direction: column;
     }
     
@@ -427,20 +420,12 @@ body {
         padding: 15px 15px 0px 25px;
     }
     #graph-svg {
-        width: 90%;
         margin: -10px 0px 14px 25px;
     }
     
     .box2 {
         width: 100%;
         height: 69px;
-    }
-    .box2-flex-container {
-        display: flex;
-        align-items: center;
-        width: 27%;
-        margin: 5px auto;
-        padding-top: 7px;
     }
     .box2-flex-container p {
         font-size: 16px;
@@ -456,40 +441,16 @@ body {
     .input {
         width: 100%;
         font-size: 18px;
-        color: #FFFFFF;
-        border-style: none;
-        border-bottom: 1px solid #6A59FF;
-    }
-    .input:focus{
-        border-style: none;
-        outline: none;
-        border-bottom: 1px solid #6A59FF;
-    }
-    ::placeholder {
-        color: #FFFFFF;
     }
     .box3 p {
         font-size: 15px;
-        color: #63669B;
-    }
-    .box3 .submit-btn {
-        width: 160px;
-        margin: 16px auto;
     }
     .box3 ul {
-        display: flex;
-        justify-content: space-between;
-        padding: 0%;
         font-size: 15px;
-        list-style: none;
     }
-    .box3 li a{
-        color: #0EF4E7;
-        text-decoration: none;
-    }
+
     /* ________________hero-section__Right__container_________ */
     .right-container {
-        /* width: 289px; */
         flex: 100%;
         margin: 5px 0px;
         padding-left: 0px;
@@ -503,13 +464,10 @@ body {
         top: 35px;
         right: -20px;
         left: -20px;
-        display: flex;
-        justify-content: space-between;
     }
     .people, .timer{         
         width: 129px;
         height: 24px;
-        display: flex;
         padding: 2px;
     }
     .timer {
@@ -534,7 +492,7 @@ body {
     }
 
 
-/* ____________________Mobile/tablet content_______ */
+    /* ______________Mobile/tablet content____ */
     .mobile-content {
         display: block;
     }
@@ -598,7 +556,6 @@ body {
         padding: 15px 15px 0px 16px;
     }
     #graph-svg {
-        width: 90%;
         margin: -10px 0px 14px 16px;
     }
 
@@ -640,8 +597,6 @@ body {
         right: 10%;
     }
     
-
-    
     .box3 {
         height: 150px;
         padding: 11px 16px 0px 16px;
@@ -649,16 +604,6 @@ body {
     }
     .input {
         font-size: 8px;
-        color: #6A59FF;
-        border-bottom: 1px solid #6A59FF;
-    }
-    .input:focus{
-        border-style: none;
-        outline: none;
-        border-bottom: 1px solid #6A59FF;
-    }
-    ::placeholder {
-        color: #FFFFFF;
     }
     .box3 p {
         font-size: 13px;
@@ -671,13 +616,11 @@ body {
         height: 30px;
     }
     .box3 ul {
-        display: flex;
         font-size: 13px;
     }
 
     .designCurve {
         height: 365px;
-        background-image: url(../images/mobile-footer-bg.svg);
     }
 }
 
